@@ -1,0 +1,447 @@
+###使用配置中心、注册中心初始化脚本
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=transport.type&content=TCP&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{
+  "dataId": "transport.type",
+  "content": "TCP",
+  "group": "SEATA_GROUP",
+  "tenant": "5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca"
+}
+
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=transport.server&content=NIO&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=transport.heartbeat&content=true&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=transport.enableClientBatchSendRequest&content=false&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=transport.threadFactory.bossThreadPrefix&content=NettyBoss&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=transport.threadFactory.workerThreadPrefix&content=NettyServerNIOWorker&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=transport.threadFactory.serverExecutorThreadPrefix&content=NettyServerBizHandler&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=transport.threadFactory.shareBossWorker&content=false&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=transport.threadFactory.clientSelectorThreadPrefix&content=NettyClientSelector&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=transport.threadFactory.clientSelectorThreadSize&content=1&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=transport.threadFactory.clientWorkerThreadPrefix&content=NettyClientWorkerThread&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=transport.threadFactory.bossThreadSize&content=1&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=transport.threadFactory.workerThreadSize&content=default&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=transport.shutdown.wait&content=3&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=service.vgroupMapping.my_test_tx_group&content=default&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=service.default.grouplist&content=127.0.0.1:8091&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=service.enableDegrade&content=false&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=service.disableGlobalTransaction&content=false&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=client.rm.asyncCommitBufferLimit&content=10000&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=client.rm.lockRetryInternal&content=10&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=client.rm.lockRetryTimes&content=30&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=client.rm.reportRetryCount&content=5&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=client.rm.lockRetryPolicyBranchRollbackOnConflict&content=true&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=client.rm.tableMetaCheckEnable&content=false&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=client.rm.sqlParserType&content=druid&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=client.rm.reportSuccessEnable&content=false&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=client.tm.commitRetryCount&content=5&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=client.tm.rollbackRetryCount&content=5&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=store.mode&content=db&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=store.file.dir&content=file_store/data&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=store.file.maxBranchSessionSize&content=16384&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=store.file.maxGlobalSessionSize&content=512&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=store.file.fileWriteBufferCacheSize&content=16384&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=store.file.flushDiskMode&content=async&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=store.file.sessionReloadReadSize&content=100&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=store.db.datasource&content=dbcp&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=store.db.dbType&content=mysql&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=store.db.driverClassName&content=com.mysql.jdbc.Driver&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=store.db.url&content=jdbc:mysql://127.0.0.1:3306/seata?useUnicode=true&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=store.db.user&content=root&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=store.db.password&content=root&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=store.db.minConn&content=1&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=store.db.maxConn&content=3&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=store.db.globalTable&content=global_table&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=store.db.branchTable&content=branch_table&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=store.db.queryLimit&content=100&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=store.db.lockTable&content=lock_table&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=server.recovery.committingRetryPeriod&content=1000&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=server.recovery.asynCommittingRetryPeriod&content=1000&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=server.recovery.rollbackingRetryPeriod&content=1000&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=server.recovery.rollbackingRetryPeriod&content=1000&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=server.maxCommitRetryTimeout&content=-1&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=server.maxRollbackRetryTimeout&content=-1&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=server.rollbackRetryTimeoutUnlockEnable&content=false&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=client.undo.dataValidation&content=true&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=client.undo.logSerialization&content=jackson&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=server.undo.logSaveDays&content=7&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=server.undo.logDeletePeriod&content=86400000&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=client.undo.logTable&content=undo_log&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=client.log.exceptionRate&content=100&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=transport.serialization&content=seata&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=transport.compressor&content=none&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=metrics.enabled&content=false&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=metrics.registryType&content=compact&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=metrics.exporterList&content=prometheus&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
+###
+POST http://localhost:8848/nacos/v1/cs/configs?dataId=metrics.exporterPrometheusPort&content=9898&group=SEATA_GROUP&tenant=5a3c7d6c-f497-4d68-a71a-2e5e3340b3ca
+Content-Type: application/json;charset=UTF-8
+
+{}
+
